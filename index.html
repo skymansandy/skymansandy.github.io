@@ -16,13 +16,7 @@
 		<link rel="icon" 
       type="image/png" 
       href="/images/sandyicon.png">
-		<script>
-			document.getElementById("sblog").onclick = function funblog()
-    {
-     window.open('http://codeshuffle.in/','_blank'); 
-				alert("Hello");
-    }   
-		</script>
+		
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -125,7 +119,7 @@
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
-								<section id="sblog" class="4u 6u(medium) 12u$(xsmall)">
+								<section id="sblog" onclick="window.open(document.URL, '_blank')" class="4u 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-area-chart"></span>
 									<h3>Blog</h3>
 									<p>My personal Tech &amp; Coding Blog Purely Tech!</p>
