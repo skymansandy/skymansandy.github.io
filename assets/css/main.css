@@ -2861,7 +2861,6 @@
 	}
 
 		.goto-top:before {
-			background-image: url("images/backtotop.png");
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: contain;
