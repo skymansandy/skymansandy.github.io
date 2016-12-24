@@ -3033,6 +3033,10 @@
 		.spotlight.style3 .content {
 			border-color: #39c088;
 		}
+		
+		.spotlight.style4 .content {
+			border-color: #efba1c;
+		}
 
 		.spotlight.inactive .content {
 			opacity: 0;
