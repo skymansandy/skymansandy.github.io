@@ -2844,6 +2844,37 @@
 			width: 2em;
 			z-index: 1;
 		}
+		
+		.goto-top {
+		border: 0;
+		bottom: 0;
+		display: block;
+		height: 5em;
+		left: 50%;
+		margin: 0 0 0 -5em;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 10em;
+		white-space: nowrap;
+		width: 10em;
+		z-index: 1;
+	}
+
+		.goto-top:before {
+			background-image: url("images/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			position: absolute;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+		}
 
 /* Spotlight */
 
@@ -2985,6 +3016,23 @@
 			transition-delay: 0.5s;
 			opacity: 1;
 		}
+		
+		
+		.spotlight .goto-top {
+			-moz-transform: translate(0,0);
+			-webkit-transform: translate(0,0);
+			-ms-transform: translate(0,0);
+			transform: translate(0,0);
+			-moz-transition: -moz-transform 0.75s ease, opacity 1s ease-in;
+			-webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
+			-ms-transition: -ms-transform 0.75s ease, opacity 1s ease-in;
+			transition: transform 0.75s ease, opacity 1s ease-in;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+			opacity: 1;
+		}
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
@@ -3036,6 +3084,14 @@
 		}
 
 		.spotlight.inactive .goto-next {
+			-moz-transform: translate(0,1.5em);
+			-webkit-transform: translate(0,1.5em);
+			-ms-transform: translate(0,1.5em);
+			transform: translate(0,1.5em);
+			opacity: 0;
+		}
+		
+		.spotlight.inactive .goto-top {
 			-moz-transform: translate(0,1.5em);
 			-webkit-transform: translate(0,1.5em);
 			-ms-transform: translate(0,1.5em);
@@ -3567,6 +3623,10 @@
 				.spotlight .goto-next {
 					display: none;
 				}
+				
+				.spotlight .goto-top {
+					display: none;
+				}
 
 		/* Wrapper */
 
@@ -3581,6 +3641,10 @@
 			}
 
 				#banner .goto-next {
+					height: 7em;
+				}
+				
+				#banner .goto-top {
 					height: 7em;
 				}
 
@@ -3664,6 +3728,12 @@
 		/* Goto Next */
 
 			.goto-next:before {
+				height: 0.8em;
+				margin: -0.4em 0 0 -0.6em;
+				width: 1.2em;
+			}
+			
+.goto-top:before {
 				height: 0.8em;
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
